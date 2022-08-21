@@ -3,5 +3,54 @@
 @import 'fonts'
 @import 'global'
 
+.header
+    &__inner
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 40px 0
+.menu
+    &__list
+        display: flex
+    &__list-item
+        margin-right: 35px
+        &:last-child
+            margin-right: 0
+    &__list-link
+        @extend %roboto-400
+        font-size: 16px
+        line-height: 1.2
+        color: $color-black
+        padding: 0 2px
+        padding-bottom: 1px
+        text-decoration: none
+        text-transform: uppercase
+        transition: .1s all
+        &:hover, &--active
+            @extend %roboto-700
+            color: $main-color
+            border-bottom: 1px solid $main-color
+.user-nav
+    display: flex
+    &__link
+        position: relative
+        margin-right: 25px
+        text-decoration: none
+        &:last-child
+            margin-right: 0
+    &__num
+        @extend %quicksand-500
+        position: absolute
+        width: 20px
+        height: 20px
+        border-radius: 50%
+        background: $main-color
+        text-align: center
+        font-size: 12px
+        line-height: 20px
+        color: $color-white
+        top: -9px
+        right: -14px
+        
 
-@import 'media'  
+@import 'media'
