@@ -1,6 +1,7 @@
 @import 'reset'
 @import 'variables'
 @import 'fonts'
+@import 'libs'
 @import 'typography'
 @import 'buttons'
 @import 'global'
@@ -101,7 +102,6 @@
 
     &__social-link
         transition: .3s all
-        
 
     &__title
         margin-bottom: 35px
@@ -113,7 +113,6 @@
         color: $default-color
         text-decoration: none
         margin-bottom: 10px
-            
 
     &__text
         font-family: 'Quicksand', sans-serif
@@ -181,6 +180,73 @@ path
     &:hover
         fill: $main-color !important
 
+.top-slider
+    background-image: url(../img/slider-top.png)
+    background-color: $section-bg
+    background-repeat: no-repeat
+    background-size: cover
+    padding: 65px 0 45px 0
+    &__container
+        max-width: 1560px
+    &__inner
+
+    &__item
+        display: flex !important
+        justify-content: space-between
+        align-items: center
+    &__content
+        padding-left: 175px
+    &__title
+        max-width: 670px
+        margin-bottom: 40px
+    &__text
+        max-width: 470px
+        font-family: 'Quicksand', sans-serif
+        font-weight: 500
+        line-height: 26px
+        margin-bottom: 59px
+    &__btn
+        letter-spacing: 0.2em
+        padding: 14px 35px
+    &__img
+
+    .slick-dots
+        display: flex
+        justify-content: center
+        margin-top: -70px
+        li
+            line-height: 0
+            button
+                font-size: 0
+                border: 1px solid transparent
+                width: 26px
+                height: 26px
+                background: transparent
+                border-radius: 50%
+                padding: 0
+                margin-right: 5px
+                position: relative
+                &::before
+                    content: ""
+                    width: 6px
+                    height: 6px
+                    position: absolute
+                    background: $default-color
+                    border-radius: 50%
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, -50%)
+
+        .slick-active
+            button
+                background: transparent
+                border-color: $main-color
+                &::before
+                    background: $main-color
+                    
+                
+                
+                
 
 
 @import 'media'
