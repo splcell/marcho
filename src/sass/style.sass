@@ -590,10 +590,142 @@ path
     font-weight: 700
     color: $color-black
     margin-bottom: 15px
-    
+
 .partners
     padding: 120px 0 60px
     &__list
         display: flex
         justify-content: space-between
+
+.blog
+    // background-image: url(../img/blog-bg.png)
+    // background-repeat: no-repeat
+    // background-position: center center
+    padding: 60px 0 164px 0
+    position: relative
+    &::after, &::before
+        content: ""
+        position: absolute
+    &::after
+        width: 56px
+        height: 58px
+        top: 82%
+        right: 123px
+        background-image: url(../img/decor/blog-decor-after.png)
+    &::before
+        width: 106px
+        height: 106px
+        background-image: url(../img/decor/blog-decor-before.png)
+        top: 45%
+        left: 124px
+
+    &__title
+        margin-bottom: 29px
+
+    &__subtitle
+        max-width: 557px
+        text-align: center
+        margin-bottom: 56px
+
+    &__items
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        row-gap: 30px
+        position: relative
+        &::after
+            content: ""
+            position: absolute
+            width: 126px
+            height: 53px
+            background-image: url(../img/decor/bg-after.png)
+            background-repeat: no-repeat
+            top: -31px
+            right: -35px
+            z-index: -1     
+
+    &__item
+        max-width: 370px
+        width: 100%
+        background: $color-white
+        padding-bottom: 29px
+        border: 1px solid #ececec
+        transition: .3s all
+        &:hover
+            border: none
+            box-shadow: 20px 0px 60px 0px rgba(202,202,202,0.34)
+            .blog__item-read
+                color: $main-color
+                &::after
+                    background-image: url(../img/icons/blog-icon-red.png)
+
+    &__item-logo
+
+    &__item-img
+        height: 288px
+        object-fit: cover
+        margin-bottom: 34px
+
+    &__item-info
+        display: flex
+        margin-bottom: 24px
+
+    &__item-autor, &__item-date, &__item-read
+        font-family: 'Quicksand', sans-serif
+        font-size: 16px
+        line-height: 26px
+        font-weight: 500
+        color: $default-color
+        text-decoration: none
+        position: relative
+        &::after, &::before
+            content: ""
+            position: absolute
+
+    &__item-autor
+        padding-left: 70px
+        margin-right: 63px
+        &::before
+            width: 20px
+            height: 20px
+            background-image: url(../img/icons/blog-icon-1.png)
+            left: 40px
+
+
+    &__item-date
+        &::before
+            width: 20px
+            height: 20px
+            background-image: url(../img/icons/blog-icon-2.png)
+            right: 137px
+            top: 2px
+
+    &__item-content
+        display: flex
+        flex-direction: column
+
+    &__item-title
+        max-width: 336px
+        margin-bottom: 25px
+        text-decoration: none
+        padding-left: 41px
+        
+
+    &__item-read
+        padding-left: 40px
+        text-decoration: none
+        transition: .3s all
+        &::after
+            width: 10px
+            height: 8px
+            background-image: url(../img/icons/blog-icon-3.png)
+            top: 10px
+            right: 231px
+
+
+    
+    
+    
+    
+    
 @import 'media'
