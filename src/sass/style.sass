@@ -180,6 +180,22 @@ path
     &:hover
         fill: $main-color !important
 
+.top
+
+    &__container
+        max-width: 1700px
+        margin: 0 auto
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: top center
+        padding: 136px 0
+        text-align: center
+
+    &__title
+        line-height: 1.2
+        font-weight: 400
+        margin-bottom: 34px
+
 .top-slider
     background-image: url(../img/slider-top.png)
     background-color: $section-bg
@@ -642,7 +658,7 @@ path
             background-repeat: no-repeat
             top: -31px
             right: -35px
-            z-index: -1     
+            z-index: -1
 
     &__item
         max-width: 370px
@@ -691,7 +707,6 @@ path
             background-image: url(../img/icons/blog-icon-1.png)
             left: 40px
 
-
     &__item-date
         &::before
             width: 20px
@@ -709,7 +724,6 @@ path
         margin-bottom: 25px
         text-decoration: none
         padding-left: 41px
-        
 
     &__item-read
         padding-left: 40px
@@ -722,10 +736,83 @@ path
             top: 10px
             right: 231px
 
+.modal
+    margin-top: 120px
+    text-align: center
+    padding-bottom: 120px
+    &__link
+        font-family: 'Roboto', sans-serif
+        font-size: 22px
+        line-height: 1.2
+        font-weight: 400
+        color: #909090
+        margin-right: 60px
+        text-decoration: none
+        text-transform: uppercase
+        &:last-child
+            margin-right: 0
+        &--active
+            font-weight: 700
+            color: $main-color
 
-    
-    
-    
-    
-    
+    &__form
+        display: flex
+        flex-direction: column
+        align-items: center
+        width: 570px
+        margin: 0 auto
+        margin-top: 60px
+
+    &__input
+        width: 100%
+        height: 60px
+        border: none
+        background: #f6f6f6
+        padding: 0 10px
+        margin-bottom: 40px
+        margin-top: 14px
+        &:last-child
+            margin-bottom: 61px
+
+    &__label
+        margin-right: auto
+
+    &__label, &__label-checkbox
+        font-family: 'Quicksand', sans-serif
+        line-height: 1.2
+        font-weight: 500
+
+    &__checkbox-box
+        margin-right: auto
+        margin-bottom: 21px
+
+    &__checkbox
+
+    &__label-checkbox
+        flex: none
+        display: inline-block
+        margin-right: auto
+
+    &__btn
+        display: inline-block
+        background: $color-black
+        line-height: 1.2
+        font-family: 'Roboto', sans-serif
+        font-weight: 400
+        letter-spacing: 0.2em
+        color: $color-white
+        text-transform: uppercase
+        width: 100%
+        padding: 24px 0
+        cursor: pointer
+        margin-bottom: 20px
+
+    &__form-link
+        margin-right: auto
+        font-family: 'Quicksand', sans-serif
+        line-height: 1.2
+        font-weight: 500
+        color: $main-color
+        text-decoration: none
+
 @import 'media'
