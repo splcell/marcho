@@ -15,7 +15,27 @@ $(".stars").rateYo({
   });
 
 
-  function getTimeRemaining(endtime) {
+
+$('.filter-price__slider').ionRangeSlider({
+    type: "double",
+    prefix: "$",
+    onStart: function (data){
+      $('.filter-price__min').text(data.from);
+      $('.filter-price__max').text(data.to);
+    },
+    onChange: function (data) {
+      $('.filter-price__min').text(data.from);
+      $('.filter-price__max').text(data.to);
+  },
+});
+
+
+
+
+
+
+
+function getTimeRemaining(endtime) {
     const total = Date.parse(endtime) - Date.parse(new Date());
     const seconds = Math.floor((total / 1000) % 60);
     const minutes = Math.floor((total / 1000 / 60) % 60);

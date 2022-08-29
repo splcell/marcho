@@ -12,6 +12,7 @@
         justify-content: space-between
         align-items: center
         padding: 40px 0
+
 .menu
     &__list
         display: flex
@@ -825,5 +826,312 @@ path
         font-weight: 500
         &:last-child
             margin-bottom: 39px
+
+.error-page
+    padding: 120px 0
+
+    &__inner
+        display: flex
+        align-items: center
+
+    &__title
+        text-transform: none
+        font-family: 'Roboto', sans-serif
+        font-size: 48px
+        line-height: 26px
+        font-weight: 700
+        color: #28384f
+        margin-bottom: 30px
+
+    &__subtitle
+        max-width: 460px
+        margin: 0
+        margin-bottom: 59px
+
+    &__link
+        padding: 12px 33px
+        text-decoration: none
+        text-transform: uppercase
+
+    &__img
+        margin-left: auto
+
+.shop
+    padding: 120px 0
+
+    &__inner
+        display: flex
+
+    &__filters
+        width: 370px
+        margin-right: 30px
+
+    &__content
+
+.filter
+    &__item
+        border: 1px solid #ececec
+        padding: 40px 30px
+        margin-bottom: 40px
+        &:last-child
+            margin-bottom: 0
+    &__title
+        font-family: 'Roboto', sans-serif
+        font-size: 22px
+        line-height: 1.2
+        text-transform: uppercase
+        font-weight: 400
+        color: $color-black
+        margin-bottom: 30px
+
+.filter-search
+
+    &__form
+        display: flex
+
+    &__input
+        width: 260px
+        height: 50px
+        border: none
+        background-color: #f6f6f6
+        padding: 0 5px 0 15px
+        &::placeholder
+            font-family: 'Quicksand', sans-serif
+            line-height: 1.2
+            font-weight: 500
+            color: $default-color
+
+    &__btn
+        border: none
+        background: $main-color
+        width: 50px
+        height: 50px
+        display: flex
+        justify-content: center
+        align-items: center
+        cursor: pointer
+
+.filter-price
+    &__form
+        margin-bottom: 54px
+    &__span-box
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+    &__span
+        font-family: 'Quicksand', sans-serif
+        line-height: 1.2
+        font-weight: 500
+    &__btn
+        padding: 10px 23px
+        cursor: pointer
+
+.irs--flat .irs-line
+    height: 5px
+    color: #ececec
+    border-radius: 0
+    top: 13px
+
+.irs--flat .irs-handle
+    width: 30px
+    height: 30px
+    background: $color-white
+    box-shadow: 0px 0px 13px 0px rgba(90,90,90,0.2)
+    top: 0
+
+.irs--flat .irs-handle>i:first-child
+    display: none
+
+.irs--flat .irs-bar
+    height: 5px
+    background: $main-color
+    top: 13px
+
+.irs-from, .irs-to, .irs-single
+    display: none
+
+.irs--flat .irs-min, .irs--flat .irs-max
+    display: none
+
+.filter-color
+    &__label
+        padding: 20px 0
+        border-bottom: 1px solid #ebebeb
+        display: flex
+        justify-content: space-between
+        position: relative
+        cursor: pointer
+        &:first-child
+            padding-top: 0
+        &:last-child
+            border: none
+            padding-bottom: 0
+    &__text
+        font-family: 'Quicksand', sans-serif
+        line-height: 1.2
+        font-weight: 500
+    &__color-box
+
+    &__checkbox
+        width: 16px
+        height: 16px
+        margin-left: -16px
+        position: absolute
+        &--blue
+            position: absolute
+            background: #00aeef
+            top: 2px
+        &--red
+            position: absolute
+            background: #f52574
+            top: 22px
+        &--green
+            position: absolute
+            background: #24d4ac
+            top: 22px
+        &--orange
+            position: absolute
+            background: #ff7e00
+            top: 22px
+        &--black
+            position: absolute
+            background: #000000
+            top: 22px
+        &--purple
+            position: absolute
+            background: #923899
+            top: 22px
+    &__input
+        width: 1px
+        height: 1px
+        overflow: hidden
+        clip: rect(0 0 0 0)
+        position: absolute
+        &:checked + .filter-color__checkbox
+            background-image: url(../img/icons/checked-white.svg)
+            background-repeat: no-repeat
+            background-position: center
+            background-color: $main-color
+
+.filter-size
+
+    &__label
+        display: flex
+        position: relative
+        flex-direction: column
+        align-items: flex-start
+        margin-bottom: 17px
+
+    &__input
+        position: absolute
+        overflow: hidden
+        width: 1px
+        height: 1px
+        clip: rect(0 0 0 0)
+        &:not(:last-child)
+            margin-bottom: 38px
+        &:checked + .filter-size__span
+            border: 1px solid $main-color
+            background: url(../img/icons/checked.svg)
+            background-repeat: no-repeat
+            background-position: center center
+            & + .filter-size__text
+                color: $main-color
+
+    &__span
+        width: 20px
+        height: 20px
+        border: 1px solid $default-color
+        border-radius: 50%
+        position: absolute
+        left: 1px
+        top: 1px
+        margin-bottom: px
+
+    &__text
+        font-family: 'Quicksand', sans-serif
+        line-height: 1.2
+        font-weight: 500
+        margin-left: 35px
+        &--active
+            color: $main-color
+
+.filter-category
+
+    &__form
+
+    &__label
+        display: block
+        margin-bottom: 15px
+        &:last-child
+            margin-bottom: 0
+
+    &__input
+        position: absolute
+        overflow: hidden
+        width: 1px
+        height: 1px
+        clip: rect(0 0 0 0)
+        &:checked + .filter-category__span-box
+            background: $main-color
+            color: $color-white
+
+    &__span-box
+        background-color: #f6f6f6
+        align-items: center
+        padding: 16px 19px
+        display: flex
+        justify-content: space-between
+        color: $color-black
+        cursor: pointer
+
+    &__span
+        font-family: 'Quicksand', sans-serif
+        line-height: 28px
+        font-weight: 500
+        color: inherit
+
+.filter-tags
+
+    &__title
+        text-transform: none
+
+    &__form
+
+    &__label
+        display: inline-block
+        margin-bottom: 20px
+        margin-right: 10px  
+        &:last-child
+            margin-bottom: 0
+            margin-right: 0
+
+    &__input
+        position: absolute
+        overflow: hidden
+        width: 1px
+        height: 1px
+        clip: rect(0 0 0 0)
+        &:checked + .filter-tags__span
+            background: $main-color
+            color: $color-white
+            border-color: $main-color
+            
+
+    &__span-box
+        color: $default-color
+
+    &__span
+        border: 1px solid $default-color
+        padding: 6px 15px
+        display: inline-flex
+        font-family: 'Quicksand', sans-serif
+        line-height: 28px
+        font-weight: 500
+        color: inherit
+        cursor: pointer
+       
+            
 
 @import 'media'
