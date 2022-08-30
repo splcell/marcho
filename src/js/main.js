@@ -29,7 +29,7 @@ $('.filter-price__slider').ionRangeSlider({
   },
 });
 
-
+$('select').styler();
 
 
 
