@@ -471,6 +471,84 @@ path
 .products-item
     max-width: 370px
     transition: .5s all
+    text-align: center
+    &--list
+        min-width: 100%
+        display: flex
+        text-align: left
+        &:hover
+            .products-item__link-box
+                transform: translateY(-297%) !important
+
+        .products-item__img-box
+            min-width: 200px
+            height: 100%
+            margin-bottom: 0
+            img
+                height: inherit
+        .products-item__link-box
+            width: 115px
+            border: none
+            background: transparent
+            box-shadow: none
+            bottom: auto
+            .products-item__link--line
+                display: none
+        .products-item__link
+            margin-right: 14px
+            width: 50px
+            height: 50px
+            background-color: #ffffff
+            border-radius: 50%
+            box-shadow: 0px 5px 30px 0px rgba(152,152,152,0.2)
+            display: flex
+            justify-content: center
+            align-items: center
+            right: 23%
+            &:last-child
+                margin-right: 0
+        .products-item__content-box
+            display: block
+
+        .products-item__box
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+
+        .products-item__title
+            order: -1
+            width: 100%
+        .stars, .products-item__price
+            order: 1
+
+        .products-item__price
+            margin-right: 10px
+
+        .stars
+            margin: 0
+            margin-bottom: 4px
+
+        .products-item__wrapper-box
+            padding: 21px 40px
+            border: 1px solid #ececec
+            border-left: none
+
+        .products-item__text
+            font-family: 'Quicksand', sans-serif
+            line-height: 26px
+            font-weight: 500
+            margin: 19px 0 16px 0
+
+        .products-item__btn
+            padding: 11px 40px
+            background: $color-black
+            box-shadow: none
+            text-transform: none
+            &:hover
+                background: $main-color
+                box-shadow: 0px 10px 25px 0px rgba(254,62,87,0.3)
+        
+
 
     &__img-box
         position: relative
@@ -480,6 +558,9 @@ path
 
     &__img
         object-fit: cover
+
+    &__content-box
+        display: none
 
     &__link-box
         position: absolute
@@ -1133,6 +1214,14 @@ path
 
 .shop-content
     width: 100%
+    &__inner
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        border-bottom: 1px solid #ececec
+        margin-bottom: 39px
+        .products-item
+            margin-bottom: 40px
     &__filters
         display: flex
         border: 1px solid #ebebeb
@@ -1156,6 +1245,8 @@ path
     span
         line-height: 24px
         margin-right: 15px
+        &:last-child
+            margin-right: 0
 
 .jq-selectbox__select
     font-family: 'Quicksand', sans-serif
@@ -1209,10 +1300,13 @@ path
     padding: 15px
     border: 1px solid $default-color
     border-radius: 4px
-    background: transparent
+    background: $color-white
     box-shadow: 0 2px 10px rgb(0 0 0 / 20%)
 
-ul
-    padding: 5px
+    ul
+        padding: 5px
+
+
+
 
 @import 'media'

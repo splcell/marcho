@@ -63,10 +63,61 @@ body
         font-weight: 500
         color: inherit
 
-
 .header--404
     background-color: #f6f6f6
 
 .user-nav__num--404
     display: none
-        
+
+.pagination
+    display: flex
+    justify-content: center
+
+    &__list
+        display: flex
+
+    &__list-item
+        margin-right: 30px
+        &:last-child
+            margin-right: 0
+
+    &__prev
+        margin-right: 46px
+        position: relative
+        padding-left: 15px
+        &::before
+            content: "<"
+            position: absolute
+            left: 0
+            width: 6px
+            height: 11px
+
+    &__next
+        margin-left: 46px
+        position: relative
+        padding-right: 15px
+        &::after
+            content: ">"
+            position: absolute
+            right: 0
+            width: 6px
+            height: 11px
+
+    &__arrow
+        text-transform: uppercase
+            
+            
+
+    &__link, &__next, &__prev
+        font-family: 'Quicksand', sans-serif
+        font-weight: 500
+        color: $default-color
+
+    &__link
+        &--active
+            color: $main-color
+
+    
+
+    a
+        text-decoration: none
