@@ -31,6 +31,8 @@ $('.filter-price__slider').ionRangeSlider({
 
 $('select').styler();
 
+$('.product__items-num').styler();
+
 $('.shop-content__filters-btn').on('click', function(){
   $('.shop-content__filters-btn').removeClass('shop-content__filters-btn--active')
   $(this).addClass('shop-content__filters-btn--active');
@@ -44,6 +46,53 @@ $('.button-list').on('click', function(){
 $('.button-grid').on('click', function(){
   $('.products-item').removeClass('products-item--list')
   
+})
+
+
+$('.product-slide__thumb').slick({
+
+  asNavFor: '.product-slide__big',
+  focusOnSelect: true,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  vertical: true,
+  draggable: false,
+
+
+})
+
+
+
+
+$('.product-slide__big').slick({
+
+
+  asNavFor: '.product-slide__thumb',
+  draggable: false,
+  arrows: false,
+  fade: true
+
+
+
+})
+
+
+$('.product-tabs__top-links').on('click', function(e){
+
+  e.preventDefault()
+
+  $('.product-tabs__top-links').removeClass('product-tabs__top-links--active');
+
+  $(this).addClass('product-tabs__top-links--active')
+
+  $('.product-tabs__content-item').removeClass('product-tabs__content-item--active');
+
+  $($(this).attr('href')).addClass('product-tabs__content-item--active')
+
+
+
+
+
 })
 
 

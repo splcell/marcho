@@ -547,8 +547,6 @@ path
             &:hover
                 background: $main-color
                 box-shadow: 0px 10px 25px 0px rgba(254,62,87,0.3)
-        
-
 
     &__img-box
         position: relative
@@ -1306,7 +1304,467 @@ path
     ul
         padding: 5px
 
+.product
+    padding: 120px 0 60px 0
+
+    &__container
+      border-bottom: 2px solid #ececec
+
+    &__items-form
+
+    &__items-info
+
+    &__items-num
+        border: 1px solid #ececec
+        transform: translateY(1px)
+
+    &__items-btn
+        padding: 13px 37px
+        text-transform: none
+        margin-left: 15px
+        margin-bottom: 155px
+
+.product-items
+
+    &__inner
+        display: flex
+
+    &__slide
+        width: 730px
+        display: flex
+
+    &__content
+        width: 370px
+
+    &__title
+        margin-bottom: 15px
+
+    &__box
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 25px
+
+    &__price
+        display: flex
+        align-items: center
+
+    &__price-new
+        margin-right: 19px
+        font-family: 'Quicksand', sans-serif
+        font-size: 18px
+        line-height: 34px
+        font-weight: 500
+        color: $color-black
+
+    &__price-old
+        font-family: 'Quicksand', sans-serif
+        font-size: 18px
+        line-height: 34px
+        font-weight: 500
+        color: #ccccce
+        text-decoration: line-through
+
+    &__stars
+        display: flex
+        align-items: baseline
+        font-family: 'Quicksand', sans-serif
+        font-size: 18px
+        line-height: 34px
+        font-weight: 500
+        color: $color-black
+
+    &__text
+        margin-bottom: 25px
+        font-family: 'Quicksand', sans-serif
+        line-height: 26px
+        font-weight: 500
+        color: $default-color
+
+    &__span
+        display: block
+        font-family: 'Roboto', sans-serif
+        font-size: 18px
+        line-height: 26px
+        color: $color-black
+
+.product-slide
+    margin-right: 70px
+    .slick-track
+        height: 674px
+    .slick-vertical .slick-slide
+        height: 140px
+        margin-bottom: 30px
+
+    &__thumb
+        width: 140px
+        margin-right: 30px
+
+    &__thumb-item
+        width: 140px
+        height: 140px
+        margin-bottom: 10px
+        cursor: pointer
+
+    &__thumb-img
+        width: 140px
+        height: 140px
+        //object-fit: cover
+
+    &__big
+        width: 560px
+
+    &__big-item
+
+    &__big-img
+        width: 560px
+        height: 651px
+        object-fit: contain
+
+.product-items-stars
+    margin-bottom: 0
+    margin-right: 10px
+
+.product-filter
+
+    &__color
+        margin-bottom: 25px
+
+    &__color-title, &__size-title
+        display: block
+        font-family: 'Roboto', sans-serif
+        font-size: 18px
+        line-height: 26px
+        color: $color-black
+        margin-bottom: 14px
+
+    &__color-label, &__size-label
+        margin-right: 10px
+        display: inline-flex
+        cursor: pointer
+        &:last-child
+            margin-right: 0
+
+    &__color-box
+        padding: 2px
+        border: 1px solid #ccccce
+
+    &__color-input
+        position: absolute
+        overflow: hidden
+        width: 1px
+        height: 1px
+        clip: rect(0 0 0 0)
+        &:checked + .product-filter__color-box
+            border-color: $main-color
+
+    &__color-span
+        display: block
+        width: 16px
+        height: 16px
+
+    &__size
+        margin-bottom: 25px
+
+    &__size-input
+        position: absolute
+        overflow: hidden
+        width: 1px
+        height: 1px
+        clip: rect(0 0 0 0)
+        &:checked + .product-filter__size-span
+            border-color: $main-color
+
+    &__size-span
+        padding: 5px 3px
+        width: 40px
+        height: 41px
+        border: 1px solid #ececec
+        font-family: 'Quicksand', sans-serif
+        line-height: 26px
+        font-weight: 500
+        text-align: center
+        color: $default-color
+
+.product-info
+
+    &__list
+        display: flex
+        flex-direction: column
+
+    &__list-item
+        display: inline-flex
+        margin-bottom: 17px
+
+    &__title
+        margin-right: 20px
+        font-family: 'Quicksand', sans-serif
+        line-height: 18px
+        font-weight: 500
+        color: $color-black
+
+    &__text, &__link
+        font-family: 'Quicksand', sans-serif
+        line-height: 18px
+        font-weight: 500
+        color: $default-color
+
+    &__link, &__soc-link
+        text-decoration: none
+
+    &__link
+        transition: .3s all
+        &:hover
+            text-decoration: underline
+
+    &__soc-link
+        margin-right: 10px
+        &:last-child
+            margin-right: 0
+
+.jq-number__field input
+    font-family: 'Quicksand', sans-serif
+    width: 114px
+    font-weight: 500
+    padding: 12px 9px
+    border: none
+    outline: none
+    background: none
+    color: $color-black
+    text-align: center
+
+.jq-number
+    padding: 0
+
+.jq-number__spin
+    position: absolute
+    top: 56%
+    transform: translateY(-50%)
+    right: 15px
+    width: 32px
+    height: 14px
+    border: none
+    background: transparent
+    box-shadow: none
+    text-shadow: none
+    cursor: pointer
+    &::after
+        content: ""
+        position: absolute
+        top: 4px
+        left: 5px
+        width: 14px
+        height: 2px
+        background: $color-black
+
+.plus
+    right: 4px
+    top: 56%
+    &::before
+        content: ""
+        position: absolute
+        top: -2px
+        left: 11px
+        width: 2px
+        height: 14px
+        background: $color-black
+
+.minus
+    left: 9px
+
+.product-tabs
+
+    &__top
+        padding-bottom: 18px
+        border-bottom: 2px solid #ececec
+        margin-bottom: 41px
+
+    &__top-links
+        font-family: 'Roboto', sans-serif
+        font-size: 22px
+        line-height: 28px
+        font-weight: 400
+        color: $default-color
+        text-decoration: none
+        margin-right: 59px
+        &:last-child
+            margin-right: 0
+        &--active
+            color: $color-black
+            padding-bottom: 20px
+            border-bottom: 2px solid $main-color
+
+    &__content-item
+        display: none
+        margin-bottom: 65px
+        &--active
+            display: block
+    
+
+.comments
+    display: flex
+    align-items: flex-start
+    margin-bottom: 11px
+    &:last-child
+        margin-bottom: 0
+
+    &__img
+        object-fit: cover
+        min-width: 70px
+        height: 71px
+        border-radius: 50%
+        overflow: hidden
+
+    &__content
+        margin-left: 30px
+
+    &__content-top
+        display: flex
+        align-items: center
+        margin-bottom: 14px
+
+    &__content-title
+        margin-right: 31px
+        position: relative
+        font-weight: 700
+        &::after
+            content: ""
+            width: 1px
+            height: 14px
+            background: $default-color
+            left: 103px
+            top: 7px
+            position: absolute
+
+    &__content-descr, &__content-text, &__content-reply
+        font-family: 'Quicksand', sans-serif
+        font-size: 16px
+        line-height: 28px
+        font-weight: 500
+
+    &__content-stars
+        margin: 0
+        margin-left: auto
+
+    &__content-text
+        line-height: 26px
+        margin-bottom: 15px
+
+    &__content-reply
+        line-height: 26px
+        text-decoration: none
+        color: $default-color
+        position: relative
+        &::before
+            content: ""
+            position: absolute
+            width: 15px
+            height: 15px
+            background: url(../img/icons/reply.svg)
+            left: -25px
+            top: 2px
+
+    &__form-title
+        padding-bottom: 16px
+        margin-bottom: 40px
+        position: relative
+        &::before
+            content: ""
+            width: 50px
+            height: 3px
+            position: absolute
+            background: $main-color
+            bottom: 0
+
+    &__form-input
+        display: inline
+        width: 570px
+        &:not(:last-child)
+            margin-right: 12px
+
+    &__form-textarea
+        display: block
+        width: 1157px
+        height: 225px
+        margin: 28px 0 40px 0
+        resize: none
+
+    &__form-input, &__form-textarea
+        padding: 10px 20px
+        border: 1px solid #ececec
+        font-family: 'Quicksand', sans-serif
+        font-size: 16px
+        line-height: 28px
+        font-weight: 500
+        &::placeholder
+            font-family: 'Quicksand', sans-serif
+            font-size: 16px
+            line-height: 28px
+            font-weight: 500
+
+    &__form-btn
+        padding: 12px 40px
+        margin-bottom: 59px
+
+    &__rating
+        display: flex
+        align-items: baseline
+        margin-bottom: 29px
+        
+    &__rating-span
+        font-family: 'Quicksand', sans-serif
+        font-size: 16px
+        line-height: 28px
+        font-weight: 400
+        color: $color-black
+        margin-right: 60px
+
+    &__rating-item
+        margin-right: 25px
+        &:last-child
+            margin-right: 0
+
+    &__rating-input
+        position: absolute
+        overflow: hidden
+        width: 1px
+        height: 1px
+        clip: rect(0 0 0 0)
+        &:checked + .comments__rating-star
+            path
+                fill: #ffc35b !important
+
+    &__rating-star
+        path
+            fill: $default-color
+            &:hover
+                fill: $default-color !important
+
+.related
+    padding: 58px 0 120px 0
+
+    &__title
+        margin-bottom: 58px
+
+    &__items
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        grid-column-gap: 30px
+
+    &__item-img-box
+        height: auto
+
+    &__stars
+        margin-bottom: 14px
+
+    &__item-title
+        margin-bottom: 8px
+        
+
+    
 
 
+    
+            
 
 @import 'media'
