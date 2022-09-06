@@ -1308,7 +1308,7 @@ path
     padding: 120px 0 60px 0
 
     &__container
-      border-bottom: 2px solid #ececec
+        border-bottom: 2px solid #ececec
 
     &__items-form
 
@@ -1599,7 +1599,6 @@ path
         margin-bottom: 65px
         &--active
             display: block
-    
 
 .comments
     display: flex
@@ -1710,7 +1709,7 @@ path
         display: flex
         align-items: baseline
         margin-bottom: 29px
-        
+
     &__rating-span
         font-family: 'Quicksand', sans-serif
         font-size: 16px
@@ -1759,12 +1758,194 @@ path
 
     &__item-title
         margin-bottom: 8px
-        
 
-    
+.blog-page
+    padding: 120px 0
+    &__inner
+        display: flex
+        justify-content: space-between
+    &__content
+        width: 770px
+        margin-right: 30px
+
+    &__sidebar
+        width: 370px
+
+    &__item
+        position: relative
+        &:not(:last-child)
+            margin-bottom: 60px
+        &--no-image
+            border-top: 1px solid #ececec
+            box-shadow: 0px 20px 60px 0px rgba(202,202,202,0.34)
+
+        &--slider
+            .blog-page__item-box
+                margin-top: -8px
+
+    &__item-box
+        border: 1px solid #ececec
+        border-top: none
+        padding: 50px 35px 40px 40px
+
+    &__img
+        max-width: 770px
+        height: 450px
+        object-fit: cover
+
+    &__item-title
+        text-decoration: none
+        transition: .3s all
+        &:hover
+            color: $main-color
+
+    &__item-info
+        margin-top: 35px
+
+    &__item-link
+        text-decoration: none
+
+    &__item-autor
+        padding-left: 33px
+        &::before
+            left: 3px
+    &__item-text
+        font-family: 'Quicksand', sans-serif
+        font-size: 16px
+        line-height: 26px
+        font-weight: 500
+
+    &__item-play
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -200%)
+
+    &__slider
+        position: relative
+        .slick-arrow
+            width: 40px
+            height: 40px
+            border: none
+            border-radius: 50%
+            background: $main-color
+            box-shadow: 0px 7px 20px 0px rgba(254,62,87,0.3)
+            padding-top: 6px
+            transform: translateY(-50%)
+            cursor: pointer
+            path
+                fill: $color-white !important
+
+        .slick-disabled
+            background: $color-white
+            box-shadow: 0px 7px 20px 0px rgba(168,168,168,0.3)
+            path
+                fill: $main-color !important
+
+        .slick-next
+            position: absolute
+            top: 50%
+            right: 40px
+        .slick-prev
+            position: absolute
+            top: 50%
+            left: 40px
+            z-index: 2
+
+.person
+    border: 1px solid #ececec
+    padding: 40px 28px
+    margin-bottom: 40px
+    text-align: center
+
+    &__img
+        display: block
+        margin: 0 auto
+        width: 160px
+        height: 160px
+        object-fit: cover
+        margin-bottom: 40px
+
+    &__title
+        font-size: 18px
+        font-weight: 700
+
+    &__post
+        color: $main-color
+        margin-bottom: 29px
+
+    &__text, &__post
+        font-family: 'Quicksand', sans-serif
+        font-size: 16px
+        line-height: 26px
+        font-weight: 500
+
+    &__text
+        margin-bottom: 30px
+
+    &__icons
+
+    &__social-link
+        text-decoration: none
+        &:not(:last-child)
+            margin-right: 10px
+
+.latest-post
+    border: 1px solid #ececec
+    padding: 40px 29px 40px 30px
+    margin-bottom: 40px
+
+    &__title
+        text-transform: uppercase
+        margin-bottom: 40px
+
+    &__item
+        display: flex
+        padding-bottom: 5px
+        margin-bottom: 37px
+        border-bottom: 1px solid #ececec
+        &:last-child
+            margin-bottom: 0
+            padding-bottom: 0
+            border-bottom: none
 
 
-    
-            
+    &__img
+        width: 80px
+        height: 80px
+        object-fit: cover
+        margin-right: 20px
+
+    &__content-text
+        display: block
+        font-family: 'Roboto', sans-serif
+        font-size: 18px
+        line-height: 26px
+        font-weight: 400
+        color: $color-black
+        margin-bottom: 6px
+        text-decoration: none
+        transition: .3s all
+        &:hover
+            color: $main-color
+
+    &__content-date
+        display: block
+        position: relative
+        font-family: 'Roboto', sans-serif
+        text-decoration: none
+        line-height: 28px
+        font-weight: 400
+        color: $default-color
+        margin-bottom: 16px
+        padding-left: 25px
+        &::before
+            content: ""
+            position: absolute
+            width: 16px
+            height: 16px
+            background: url(../img/icons/calendar.png)
+            left: -2px
+            top: 5px
 
 @import 'media'

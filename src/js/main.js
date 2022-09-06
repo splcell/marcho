@@ -89,10 +89,13 @@ $('.product-tabs__top-links').on('click', function(e){
 
   $($(this).attr('href')).addClass('product-tabs__content-item--active')
 
+})
 
 
-
-
+$('.blog-page__slider').slick({
+  prevArrow: '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="15px" viewBox="0 0 10 16" version="1.1"><g id="surface1"><path style=" fill:#fe3e57;fill-opacity:1;" d="M 1.292969 7.292969 C 0.902344 7.683594 0.902344 8.320312 1.292969 8.710938 L 6.292969 13.710938 C 6.683594 14.101562 7.320312 14.101562 7.710938 13.710938 C 8.101562 13.320312 8.101562 12.683594 7.710938 12.292969 L 3.414062 8 L 7.707031 3.707031 C 8.097656 3.316406 8.097656 2.679688 7.707031 2.289062 C 7.316406 1.898438 6.679688 1.898438 6.289062 2.289062 L 1.289062 7.289062 Z M 1.292969 7.292969 "/></g></svg></button>',
+  nextArrow: '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="15px" viewBox="0 0 10 16" version="1.1"><g id="surface1"><path style=" fill:#fe3e57;fill-opacity:1;" d="M 8.707031 7.292969 C 9.097656 7.683594 9.097656 8.320312 8.707031 8.710938 L 3.707031 13.710938 C 3.316406 14.101562 2.679688 14.101562 2.289062 13.710938 C 1.898438 13.320312 1.898438 12.683594 2.289062 12.292969 L 6.585938 8 L 2.292969 3.707031 C 1.902344 3.316406 1.902344 2.679688 2.292969 2.289062 C 2.683594 1.898438 3.320312 1.898438 3.710938 2.289062 L 8.710938 7.289062 Z M 8.707031 7.292969 "/></g></svg></button>',
+  infinite: false
 })
 
 
