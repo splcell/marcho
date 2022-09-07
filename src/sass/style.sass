@@ -1909,7 +1909,6 @@ path
             padding-bottom: 0
             border-bottom: none
 
-
     &__img
         width: 80px
         height: 80px
@@ -1947,5 +1946,164 @@ path
             background: url(../img/icons/calendar.png)
             left: -2px
             top: 5px
+
+.blog-one
+    &__items
+        border: 1px solid #ececec
+        border-top: none
+        padding: 32px 27px 30px 30px
+        margin-bottom: 30px
+    &__info
+        margin-bottom: 28px
+    &__info-link
+        margin-right: 23px
+        padding-left: 23px
+        font-family: 'Quicksand', sans-serif
+        line-height: 1.2
+        font-weight: 500
+        color: $default-color
+        text-decoration: none
+        &:last-child
+            margin-right: 0
+
+    &__link-date, &__link-comments, &__link-autor
+        position: relative
+        &::before
+            content: ""
+            position: absolute
+            width: 16px
+            height: 16px
+            left: 0
+            top: 1px
+
+    &__link-date
+        &::before
+            background: url(../img/icons/calendar.png)
+
+    &__link-comments
+        &::before
+            background: url(../img/icons/comment-red.png)
+            top: 3px
+
+    &__link-autor
+        &::before
+            background: url(../img/icons/user-red.png)
+    h5
+        font-family: 'Roboto', sans-serif
+        font-size: 22px
+        line-height: 1.2
+        font-weight: 500
+        color: $color-black
+        margin-bottom: 25px
+    p
+        margin-bottom: 35px
+        font-family: 'Quicksand', sans-serif
+        line-height: 26px
+        font-weight: 500
+        &:last-child
+            margin-bottom: 0
+
+    blockquote
+        background: $section-bg
+        border-left: 3px solid $main-color
+        padding: 40px
+        font-family: 'Roboto', sans-serif
+        font-size: 22px
+        line-height: 32px
+        font-weight: 400
+        color: $color-black
+        margin-bottom: 35px
+
+    &__img-left
+        float: left
+        margin-right: 30px
+        margin-bottom: 10px
+
+    &__img-right
+        float: right
+        margin-left: 30px
+        margin-bottom: 10px
+
+    &__comments-box
+        padding: 40px 0
+        border-bottom: 1px solid #ececec
+
+    &__comments
+        margin-bottom: 31px
+        &:last-child
+            margin-bottom: 0
+
+    &__comments-title, &__form-title
+        font-size: 24px
+        font-weight: 700
+        margin-bottom: 33px
+        text-transform: uppercase
+
+    &__reply
+        display: block
+        margin-top: 10px
+
+    &__form-box
+        padding-top: 40px
+
+    &__input-box
+        display: flex
+
+    &__form-textarea
+        width: 100%
+
+    &__info-box
+        display: flex
+        justify-content: space-between
+        padding: 0 29px
+        margin-bottom: 40px
+
+
+    &__tags-descr, &__share-descr
+        display: inline
+        margin-right: 7px
+        font-family: 'Quicksand', sans-serif
+        line-height: 26px
+        font-weight: 500
+        text-transform: uppercase
+        color: $color-black
+
+    &__tags-link
+        font-family: 'Quicksand', sans-serif
+        text-decoration: none
+        font-weight: 500
+        color: $default-color
+        margin-right: 1px
+        transition: .3s all
+        &:last-child
+            margin-right: 0
+        &:hover
+            color: $main-color
+
+    &__share
+        display: flex
+
+    &__social-link
+        text-decoration: none
+        margin-right: 15px
+        display: flex
+        align-items: center
+        transition: .3s all
+        &:last-child
+            margin-right: 0
+
+    &__author
+        display: flex
+        padding-bottom: 40px
+        border-bottom: 1px solid #ececec
+
+    &__author-photo
+        margin-right: 30px
+        width: 140px
+        height: 140px
+        object-fit: cover
+
+    .blog-one__content-descr, .blog-one__content-text, .blog-one__tags-descr, .blog-one__share-descr
+        margin-bottom: 0
 
 @import 'media'
