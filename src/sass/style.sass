@@ -2058,7 +2058,6 @@ path
         padding: 0 29px
         margin-bottom: 40px
 
-
     &__tags-descr, &__share-descr
         display: inline
         margin-right: 7px
@@ -2105,5 +2104,129 @@ path
 
     .blog-one__content-descr, .blog-one__content-text, .blog-one__tags-descr, .blog-one__share-descr
         margin-bottom: 0
+
+.contacts
+    padding: 120px 0
+
+    iframe
+        margin-bottom: 120px
+        
+
+    &__inner
+        display: flex
+        justify-content: space-between
+
+    &__content
+        max-width: 361px
+
+    &__title
+        line-height: 58px
+        text-transform: none
+        margin-bottom: 30px
+        text-align: left
+
+    &__text
+        font-family: 'Quicksand', sans-serif
+        line-height: 26px
+        font-weight: 500
+        margin-bottom: 45px
+
+    &__address-items
+        display: flex
+        flex-direction: column
+
+    &__address-item
+        display: flex
+        margin-bottom: 40px
+        &:last-child
+            margin-bottom: 0
+
+    &__link-box
+        display: flex
+        flex-direction: column
+        justify-content: center
+
+    &__white-box
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 60px
+        height: 60px
+        background: $color-white
+        box-shadow: 0px 5px 20px 0px rgba(146,146,146,0.3)
+        margin-right: 20px
+
+    &__phone, &__mail, &__item-address
+        text-decoration: none
+        font-family: 'Quicksand', sans-serif
+        line-height: 26px
+        font-weight: 500
+        color: #292929
+
+    &__item-address
+        font-style: normal
+
+    &__mail
+
+    &__form-box
+        width: 770px
+        box-shadow: 0px 10px 40px 0px rgba(172,172,172,0.3)
+        background: $color-white
+        padding: 60px 40px
+
+    &__form-title
+        margin-bottom: 30px
+
+    &__form
+
+    &__input-box
+
+    &__form-input
+        width: 330px
+        height: 60px
+        border: none
+        margin-bottom: 30px
+        margin-right: 25px
+
+    #mail
+        margin-right: 0
+
+    &__form-subject
+        width: 100%
+        height: 60px
+        display: block
+        margin-bottom: 30px
+
+    &__form-textarea
+        width: 100%
+        resize: none
+
+    &__form-input, &__form-subject, &__form-textarea
+        padding: 23px 10px 23px 23px
+        border: none
+        background-color: #f6f6f6
+        font-family: 'Quicksand', sans-serif
+        font-size: 16px
+        line-height: 58px
+        font-weight: 500
+        color: $color-black
+        &::placeholder
+            font-family: 'Quicksand', sans-serif
+            font-size: 16px
+            line-height: 58px
+            font-weight: 500
+
+    &__form
+
+    &__form-btn
+        padding: 17px 36px
+        font-family: 'Roboto', sans-serif
+        font-weight: 400
+        letter-spacing: 0.2em
+
+    &__form-textarea
+        height: 200px
+        margin-bottom: 30px
+        padding-top: 8px
 
 @import 'media'
