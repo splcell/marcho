@@ -4,7 +4,15 @@ $('.top-slider__inner').slick({
     arrows: false,
     dots: true,
     fade: true,
-    autoplay: true
+    autoplay: true,
+    responsive: [
+      {
+        breakpoint: 860,
+        settings: {
+          dots: false,
+          draggable: true
+        }
+      },]
 });
 
 $(".stars").rateYo({
