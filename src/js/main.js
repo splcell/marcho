@@ -99,6 +99,14 @@ $('.blog-page__slider').slick({
 })
 
 
+$('.hamburger').on('click', function(){
+  $('.hamburger').toggleClass('hamburger--active')
+  $('body').toggleClass('modal-open')
+  $('.menu__list').toggleClass('menu__list--active')
+})
+
+
+
 
 
 

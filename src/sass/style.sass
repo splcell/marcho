@@ -36,6 +36,45 @@
             font-weight: 700
             color: $main-color
             border-bottom: 1px solid $main-color
+
+.hamburger
+    position: relative
+    display: none
+    width: 30px
+    height: 30px
+    border: none
+    background: transparent
+    cursor: pointer
+    padding: 0
+    z-index: 7
+    span
+        display: block
+        position: relative
+        width: 30px
+        height: 1px
+        background: $color-black
+        &::after, &::before
+            content: ""
+            position: absolute
+            width: 30px
+            height: 1px
+            background: $color-black
+        &::after
+            top: -8px
+            left: 0px
+        &::before
+            bottom: -8px
+            left: 0px
+    &--active
+        span
+            background: $main-color
+            &::after, &::before
+                background: inherit
+            
+            
+
+
+
 .user-nav
     display: flex
     &__link

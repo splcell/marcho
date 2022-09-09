@@ -13,7 +13,7 @@ function browsersync() {
         server: {
             baseDir: 'src/'
         },
-        //notify: false
+        notify: false
     })
 }
 
