@@ -483,3 +483,151 @@
             text-align: center
             padding-left: 0
 
+//адаптация login
+@media (max-width: 765px)
+    .modal__form
+        max-width: 570px
+        width: 100%
+        padding: 0 10px
+
+@media (max-width: 475px)
+    .modal__link
+        margin-right: 30px
+
+//адаптация 404
+@media (max-width: 1200px)
+    .error-page
+        &__title
+            line-height: 60px
+        &__img
+            max-width: 450px
+@media (max-width: 992px)
+    .error-page
+        padding: 60px 0
+        
+
+@media (max-width: 860px)
+    .error-page
+        &__img
+            max-width: 400px
+
+@media (max-width: 765px)
+    .error-page
+        &__inner
+            flex-direction: column-reverse
+            text-align: center
+        &__img
+            max-width: 300px
+            margin-left: 0
+            margin-bottom: 50px
+        &__title
+            line-height: 26px
+            font-size: 37px
+
+@media (max-width: 475px)
+    .error-page
+        &__img
+            max-width: 250px
+        &__title
+            font-size: 29px
+            line-height: 40px
+
+//адаптация blog
+@media (max-width: 1200px)
+    .person, .latest-post
+        display: none
+    .blog-page
+        .filter__item
+            display: none
+        .filter-search
+            display: block
+            &__input
+                width: 100%
+        &__inner
+            flex-direction: column
+        &__content
+            width: 100%
+            margin-right: 0
+        &__sidebar
+            order: -1
+            width: 100%
+        &__img
+            max-width: 100%
+            width: 100%
+        &__item-autor
+            padding-left: 37px
+@media (max-width: 992px)
+    .blog-page
+        padding: 60px 0
+    .top
+        &__container
+            background-color: #ececec
+            background-image: none !important
+
+@media (max-width: 475px)
+    .top
+        &__title
+            font-size: 29px
+    .blog-page
+        .filter-search
+            &__input
+                    font-size: 14px
+        &__item-title
+            font-size: 20px
+        &__img
+            height: 350px
+        &__item-text
+            font-size: 14px
+        &__item-play
+            transform: translate(-50%, -262%)
+    .slick-slide
+        img
+            height: 250px
+
+//адаптив blog-one
+@media (max-width: 1200px)
+    .blog-one
+        &__items
+            padding: 32px 27px 148px 30px
+@media (max-width: 475px)
+    .blog-one
+        &__items
+            padding: 32px 27px 30px 30px
+        blockquote
+            padding: 10px
+            font-size: 16px
+        &__info-link
+            display: block
+            margin-bottom: 15px
+            &:last-child
+                margin-bottom: 0
+        &__img-left
+            height: 250px
+            margin-bottom: 30px
+        &__info-box, &__author
+            flex-direction: column
+        &__tags, &__author-photo
+            margin-bottom: 20px
+        .comments
+            &__content-top
+                flex-direction: column
+            &__content-title
+                margin-right: 0
+                &::after
+                    display: none
+            &__content-descr
+                margin-bottom: 10px
+            &__content-stars
+                margin-left: 0
+            &__content
+                margin-left: -52px
+                    
+
+        
+
+
+
+
+
+
+
