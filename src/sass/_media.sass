@@ -91,14 +91,11 @@
 @media (max-width: 860px)
     .footer-top
         width: 100%
-        flex-direction: column
-        align-items: center
-        text-align: center
         margin: 0 auto
         &__item
             display: block
             &:not(:last-child)
-                margin-right: 0
+                margin-right: 50px
                 margin-bottom: 30px
 
         &__title
@@ -106,9 +103,10 @@
 
         &__input
             margin-right: 4px
+        &__contacts
+            margin-right: 30px
 
-        &__social
-            justify-content: center
+        
 
     .logo
         &__img
@@ -116,6 +114,12 @@
 
 @media (max-width: 765px)
     .footer-top
+        flex-direction: column
+        align-items: center
+        text-align: center
+        &__item
+            &:not(:last-child)
+                margin-right: 0
         &__form
             flex-direction: column
         &__input
@@ -128,6 +132,10 @@
             padding: 12px 26px
         &__subscribe
             max-width: 367px
+        &__social
+            justify-content: center
+        &__contacts
+            margin-right: 0
 
     .footer-bottom
         flex-direction: column
@@ -186,11 +194,13 @@
             font-size: 14px
 
 //categories адаптив
+@media (max-width: 1350px)
+    .categories__info::after
+        display: none
+
 @media (max-width: 1200px)
     .categories-info
         z-index: 0
-        &::after
-            display: none
         &__item
             margin-right: 10px
             &:last-child
@@ -279,9 +289,13 @@
         &__content-text
             margin-bottom: 25px
         &__popup
-            max-width: none
-            width: 92%
             margin-right: 0
+
+@media (max-width: 765px)
+    .trending-fashion
+        &__popup
+            max-width: 470px
+            width: none
 
 @media (max-width: 475px)
     .trending-fashion
@@ -391,12 +405,10 @@
     .smalltext
         margin-top: 10px
 
-
 //адаптация partners
 @media (max-width: 1200px)
     .partners
         padding: 115px 30px
-
 
 @media (max-width: 765px)
     .partners
@@ -409,5 +421,65 @@
             &:last-child
                 margin-bottom: 0
 
+//адаптация blog
+@media (max-width: 1350px)
+    .blog
+        &__items
+            &:after, &::before
+                display: none
 
+@media (max-width: 1200px)
+    .blog
+        padding: 60px 0 60px 0
+        &::after, &::before
+            display: none
+        &__items
+            flex-wrap: nowrap
+        &__item
+            margin-right: 10px
+        &__item-autor
+            padding-left: 63px
+            margin-right: 57px
+            font-size: 14px
+            margin-right: 44px
+        &__item-date
+            font-size: 14px
+            &::before
+                right: 117px
+        &__item-title
+            font-size: 19px
+        &__item-read
+            &::after
+               display: none
+
+@media (max-width: 992px)
+    .blog
+        &__items
+            flex-wrap: wrap
+            justify-content: normal
+
+@media (max-width: 860px)
+    .blog
+        &__title
+            font-size: 37px
+        &__items
+            justify-content: center
+
+@media (max-width: 475px)
+    .blog
+        &__title
+            font-size: 29px
+        &__item-info
+            flex-direction: column
+            align-items: center
+        &__item-autor
+            margin-bottom: 10px
+        &__item-title
+            font-size: 15px
+            text-align: center
+            max-width: 100%
+            padding-left: 0
+        &__item-read
+            text-align: center
+            padding-left: 0
 
