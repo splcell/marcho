@@ -121,6 +121,10 @@ $('.hamburger').on('click', function(){
   $('.menu__list').toggleClass('menu__list--active')
 })
 
+$('.shop__filters-btn').on('click', function() {
+  $('.shop__filters').toggleClass('shop__filters--active')
+})
+
 
 
 

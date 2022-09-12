@@ -314,7 +314,7 @@
             margin: 0 auto
 
 // адаптация products
-@media (max-width: 1100px)
+@media (max-width: 1200px)
     .products-item
         &__img-box
             height: 297px
@@ -589,6 +589,10 @@
     .blog-one
         &__items
             padding: 32px 27px 148px 30px
+@media (max-width: 765px)
+    .blog-one
+        &__tags
+            flex-wrap: wrap
 @media (max-width: 475px)
     .blog-one
         &__items
@@ -608,9 +612,13 @@
             flex-direction: column
         &__tags, &__author-photo
             margin-bottom: 20px
+        &__form-textarea
+                height: 145px
         .comments
             &__content-top
                 flex-direction: column
+                align-items: normal
+                margin-left: 70px
             &__content-title
                 margin-right: 0
                 &::after
@@ -619,9 +627,167 @@
                 margin-bottom: 10px
             &__content-stars
                 margin-left: 0
+                margin-left: -8px
             &__content
                 margin-left: -52px
-                    
+            &__form-input
+                width: 100%
+
+//адаптация contacts
+@media (max-width: 1200px)
+    .contacts
+        &__inner
+            flex-direction: column
+            align-items: center
+        &__content
+            max-width: 100%
+        &__title
+            text-align: center
+        &__address-items
+            flex-direction: row
+            justify-content: space-evenly
+            flex-wrap: wrap
+            margin-bottom: 50px
+        &__link-box
+            justify-content: normal
+        &__form-box
+            width: 80%
+        &__form-input
+            width: 100%
+        iframe
+            width: 100%
+
+@media (max-width: 992px)
+    .contacts
+        &__title
+            font-size: 37px
+
+@media (max-width: 860px)
+    .contacts
+        padding: 60px 0
+        &__address-items
+            justify-content: center
+        &__address-item, &__link-box
+            margin-right: 30px
+            &:last-child
+                margin-right: 0
+
+@media (max-width: 765px)
+    .contacts
+        &__address-items
+            display: none
+        &__form-box
+            width: 100%
+
+
+@media (max-width: 475px)
+    .contacts
+        &__title
+            font-size: 29px
+        &__form-textarea
+            height: 120px
+        &__form-btn
+            letter-spacing: 0
+
+        iframe
+            display: none   
+
+
+//адаптация shop-page
+@media (max-width: 1200px)
+    .shop
+        &__inner
+            display: block
+        &__filters
+            width: 100%
+            margin-right: 0
+            margin-bottom: 30px
+            display: none
+            &--active
+                display: block
+        &__filters-btn
+            display: block
+            border: none
+            background: $section-bg
+            left: 139px
+            top: 24px
+            margin-bottom: 30px
+    .shop-content
+        &__inner
+            flex-wrap: wrap
+            justify-content: center
+        &__item
+            margin-right: 20px
+        &__filters
+            position: relative
+            z-index: 1
+    .filter-search
+            display: block
+            &__input
+                width: 100%
+
+@media (max-width: 992px)
+    .shop-content
+        &__img-box
+            height: 370px
+
+@media (max-width: 765px)
+    .shop-content
+        &__filters-buttons
+            display: none
+        &__filters-selects
+            margin-left: auto
+
+        
+@media (max-width: 475px)                   
+    .shop-content
+        &__filters-form
+            width: 100%
+        &__filters-option
+            display: block
+            margin: 0 auto
+        &__filters-selects
+            margin-right: auto
+    .pagination
+        &__arrows
+            display: none
+    .filter-search
+            &__input
+                    font-size: 14px
+
+//адаптация product
+
+@media (max-width: 1200px)
+    .product-slide
+        &__thumb
+            display: none
+    .product-items
+        &__slide
+            width: auto
+
+@media (max-width: 992px)
+    .product
+        padding: 60px 0
+    .product-items
+        &__inner
+            flex-direction: column
+            align-items: center
+        &__content
+            width: 100%
+
+@media (max-width: 765px)
+    .product-slide
+        height: 507px
+        &__big
+            width: 100%
+        &__big-img
+            height: 100%
+    .product-items
+        &__slide
+            width: 100%
+            margin-right: 0
+
+            
 
         
 
