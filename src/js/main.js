@@ -78,7 +78,16 @@ $('.product-slide__big').slick({
   asNavFor: '.product-slide__thumb',
   draggable: false,
   arrows: false,
-  fade: true
+  fade: true,
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        dots: false,
+        draggable: true,
+        autoplay: true
+      }
+    },]
 
 
 
