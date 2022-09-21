@@ -26,7 +26,7 @@ Git
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-The Marco website is a template for a foreign online store, the main feature of which is the presence of a large number of complex elements (for example, various filters) that have been successfully implemented during development.
+The Marco website is a template for online store, the main feature of which is the presence of a large number of complex elements (for example, various filters) that have been successfully implemented during development.
 
 When creating the site, the following technologies were used:
 
